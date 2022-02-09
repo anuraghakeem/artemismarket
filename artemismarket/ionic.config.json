@@ -1,0 +1,7 @@
+{
+  "name": "artemismarket",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
