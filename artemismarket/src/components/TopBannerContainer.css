@@ -1,0 +1,75 @@
+.banner-title h2{
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.banner-title{
+    text-align: left;
+}
+
+.banner-stats-items{
+    border-right: 2px solid #e2e8ed;
+    padding-right: 30px;
+    text-align: left;
+}
+
+.banner-stats-views{
+ text-align: left;
+ padding-left: 30px;
+}
+.banner-stats-items h5,
+.banner-stats-views h5{
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.banner-stats-items h3,
+.banner-stats-views h3{
+    font-size: 40px;
+    font-weight: 600px;
+}
+
+.banner-button-container{
+    margin-top: 30px;
+}
+
+.button-primary{
+    background: #f7b551;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.swiper .swiper-slide .banner-image img{
+    max-width: 500px;
+}
+
+.container-topbanner .swiper-slide{
+    padding-bottom: 50px;
+    padding-top: 30px;
+} 
+
+.container-topbanner .swiper-pagination-bullet{
+    width: 13px;
+    height: 13px;
+}
+
+.container-topbanner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container-topbanner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #757575;
+}
+.container-topbanner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #4bcfd0;
+}
+
+@media screen and (max-width: 991px) {
+    .banner-title,
+    .banner-stats,
+    .banner-button-container{
+        justify-content: center;
+        text-align: center;
+    }
+}
