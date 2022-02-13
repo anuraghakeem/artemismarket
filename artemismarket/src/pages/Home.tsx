@@ -1,6 +1,10 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFabButton, IonSearchbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import TopBannerContainer from '../components/TopBannerContainer';
+import CollectionSlider from '../components/CollectionSlider'
+import NewCollectionSlider from '../components/NewCollectionSlider'
+import ComingSoonSlider from '../components/ComingSoonSlider'
+import CategorySlider from '../components/CategorySlider'
 import './Home.css';
 // import {RouteComponentProps} from 'react-router';
 import { RouteComponentProps } from 'react-router-dom';
@@ -29,6 +33,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
   const [data, setData] = useState<SearchResultData[]>([])
   const [searchText, setSearchText] = useState('');
   const [showSearchVar,updateShowSearch] = useState(false)
+
 
   const showSearch = () =>{
     updateShowSearch(true)
@@ -127,7 +132,10 @@ const Home: React.FC<RouteComponentProps> = (props) => {
         </IonHeader>
         <TopBannerContainer/>
         {/* <ExploreContainer /> */}
-
+        <CollectionSlider />
+        <NewCollectionSlider />
+        <ComingSoonSlider />
+        <CategorySlider />
       </IonContent>
     </IonPage>
   );

@@ -1,0 +1,13 @@
+.swiper .swiper-slide img.collection-banner.category-image{
+    width: 100%;
+    height: auto;
+}
+
+.collection-title.category-title{
+    text-align: center;
+    height: 2rem;
+}
+
+.category-title-row{
+    justify-content: center;
+}

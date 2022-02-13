@@ -1,0 +1,74 @@
+.collectionlogo-container{
+    margin-top: -42px;
+}
+
+.container-collectionslider .collection-Card{
+    padding-bottom: 15px;
+}
+
+.swiper .swiper-slide img.collectionlogo-icon{
+    width:50px;
+    height: auto;
+    padding: 4px;
+    background-color: #4bcfd0;
+    border-radius: 25px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    color: #1d1d1d;
+    background-color: #f7b551;
+    border-radius: 30px;
+    width: 44px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    color: #1d1d1d;
+    background-color: #f7b551;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+
+.collection-title{
+    font-weight: 600;
+    height: 3rem;
+}
+
+.collection-desc{
+    height: 6rem;
+}
+
+.swiper .swiper-slide img.collection-banner{
+    height: 120px;
+}
+
+.container-collectionslider .swiper-slide{
+    padding-bottom: 40px;
+
+}
+
+.container-collectionslider .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+}
+
+.container-collectionslider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container-collectionslider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #757575;
+}
+.container-collectionslider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #4bcfd0;
+}
+
+.ion-page h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.collection-link{
+    color: #4bcfd0;
+    font-weight: 500;
+}
