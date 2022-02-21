@@ -8,28 +8,28 @@ import CategorySlider from '../components/CategorySlider'
 import FooterContainer from '../components/Footer';
 import HeaderContainer from '../components/Header';
 
-import './Home.css';
+import './Collection.css';
 // import {RouteComponentProps} from 'react-router';
 import { RouteComponentProps } from 'react-router-dom';
 
-const Home: React.FC<RouteComponentProps> = (props) => {
+const Collection: React.FC<RouteComponentProps> = (props) => {
   return (
     <IonPage>
       <HeaderContainer />
       <IonContent>
         <div className='grid-1100'>
           {/* <IonContent fullscreen> */}
-          <IonHeader collapse="condense">
+          {/* <IonHeader collapse="condense">
             <IonToolbar>
               <IonTitle size="large">Blank2</IonTitle>
             </IonToolbar>
-          </IonHeader>
-          <TopBannerContainer />
-          {/* <ExploreContainer /> */}
+          </IonHeader> */}
+          {/* <TopBannerContainer />
           <CollectionSlider />
           <NewCollectionSlider />
           <ComingSoonSlider />
-          <CategorySlider />
+          <CategorySlider /> */}
+          <h1>Collection Page</h1>
         </div>
 
         <FooterContainer />
@@ -38,4 +38,4 @@ const Home: React.FC<RouteComponentProps> = (props) => {
   );
 };
 
-export default Home;
+export default Collection;
