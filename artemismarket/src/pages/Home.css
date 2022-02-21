@@ -5,6 +5,7 @@
 
 .grid-1100{
     max-width: 1100px;
+    margin: auto;
 }
 
 .nav-row{
@@ -18,13 +19,13 @@
 }
 
 .nav-links-container a{
-    color: #000;
+    color: var(--ion-text-color, #000);
 }
 
 .search-suggestions{
-    width: 405px;
+    width: 550px;
     position: absolute;
-    top: 3.13rem;
+    top: 3.73rem;
     left: 17.7%;
     z-index: 99;
     box-shadow: 1px 0 8px #e2e8ed;
@@ -82,6 +83,23 @@
     padding: 15px 30px;
     border-radius: 20px;
     animation: gradient-animation 4s ease infinite;
+}
+
+.nav-image{
+    width: 200px;
+}
+
+.navbar-image-light{
+    display: block;
+}
+.navbar-image-dark{
+    display: none;
+}
+.dark .navbar-image-light{
+    display: none;
+}
+.dark .navbar-image-dark{
+    display: block;
 }
 
 @keyframes gradient-animation {

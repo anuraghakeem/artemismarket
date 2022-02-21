@@ -5,6 +5,7 @@ import CollectionSlider from '../components/CollectionSlider'
 import NewCollectionSlider from '../components/NewCollectionSlider'
 import ComingSoonSlider from '../components/ComingSoonSlider'
 import CategorySlider from '../components/CategorySlider'
+import FooterContainer from '../components/Footer';
 import './Home.css';
 // import {RouteComponentProps} from 'react-router';
 import { RouteComponentProps } from 'react-router-dom';
@@ -32,14 +33,14 @@ const Home: React.FC<RouteComponentProps> = (props) => {
 
   const [data, setData] = useState<SearchResultData[]>([])
   const [searchText, setSearchText] = useState('');
-  const [showSearchVar,updateShowSearch] = useState(false)
+  const [showSearchVar, updateShowSearch] = useState(false)
 
 
-  const showSearch = () =>{
+  const showSearch = () => {
     updateShowSearch(true)
     // console.log('show Searchbar')
   }
-  const hideSearch = () =>{
+  const hideSearch = () => {
     updateShowSearch(false)
     // console.log('show Searchbar')
   }
@@ -66,16 +67,19 @@ const Home: React.FC<RouteComponentProps> = (props) => {
           <IonFabButton onClick={() => props.history.push('/')}></IonFabButton> */}
           {/* <IonGrid> */}
           <IonRow className='nav-row'>
-            <IonCol size-md="2"><IonImg src='https://www.artemismarket.io/assets/artemisLogo_beta@2x.png' /></IonCol>
+            <IonCol size-md="2">
+              <IonImg src='https://www.artemismarket.io/assets/artemisLogo_beta@2x.png' className='nav-image navbar-image-light'/>
+              <IonImg src='https://www.artemismarket.io/assets/artemisLogoWhite.png' className='nav-image navbar-image-dark'/>
+              </IonCol>
             <IonCol size-md="4">
               <IonSearchbar value={searchText} onIonChange={e => setSearchText(e.detail.value!)} onIonFocus={showSearch} onIonBlur={hideSearch} animated></IonSearchbar>
             </IonCol>
             <IonCol size-md="5" className='nav-links-container'>
-            <a className='nav-link'>Explore</a>
-            <a className='nav-link'>Stats</a>
-            <a className='nav-link'>Profile</a>
-            <a className='nav-link'>More</a>
-            <button className='connect-wallet'>Connect Wallet</button>
+              <a className='nav-link'>Explore</a>
+              <a className='nav-link'>Stats</a>
+              <a className='nav-link'>Profile</a>
+              <a className='nav-link'>More</a>
+              <button className='connect-wallet'>Connect Wallet</button>
             </IonCol>
             <IonCol size-md="1">
               <IonList>
@@ -93,7 +97,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
           {/* </IonGrid> */}
         </IonToolbar>
       </IonHeader>
-      <div className={`search-suggestions ${showSearchVar?' show ':' '}`}>
+      <div className={`search-suggestions ${showSearchVar ? ' show ' : ' '}`}>
         {/* <IonContent> */}
         <div>
           <div>
@@ -105,13 +109,13 @@ const Home: React.FC<RouteComponentProps> = (props) => {
                     // console.log('item', item.logo_image.url)
                     return (
                       // <a href='' target="_blank">
-                        <li className='search-result-item'>
-                          {/* <div><IonImg src='https://content.artemismarket.io/content/assets/KFW_13_6edda30ed5.png' /></div> */}
-                          <div>
-                            <IonAvatar className='search-result-avatar'><IonImg src={item.logo_image.url} className='search-result-icon' /></IonAvatar></div>
-                          <div className='search-result-item-name'>{item.name}</div>
-                          <p>{item.total_supply} items</p>
-                        </li>
+                      <li className='search-result-item'>
+                        {/* <div><IonImg src='https://content.artemismarket.io/content/assets/KFW_13_6edda30ed5.png' /></div> */}
+                        <div>
+                          <IonAvatar className='search-result-avatar'><IonImg src={item.logo_image.url} className='search-result-icon' /></IonAvatar></div>
+                        <div className='search-result-item-name'>{item.name}</div>
+                        <p>{item.total_supply} items</p>
+                      </li>
                       // </a>
 
                     )
@@ -123,19 +127,23 @@ const Home: React.FC<RouteComponentProps> = (props) => {
         </div>
         {/* </IonContent> */}
       </div>
-      <IonContent className='grid-1100'>
-      {/* <IonContent fullscreen> */}
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <TopBannerContainer/>
-        {/* <ExploreContainer /> */}
-        <CollectionSlider />
-        <NewCollectionSlider />
-        <ComingSoonSlider />
-        <CategorySlider />
+      <IonContent>
+        <div className='grid-1100'>
+          {/* <IonContent fullscreen> */}
+          <IonHeader collapse="condense">
+            <IonToolbar>
+              <IonTitle size="large">Blank2</IonTitle>
+            </IonToolbar>
+          </IonHeader>
+          <TopBannerContainer />
+          {/* <ExploreContainer /> */}
+          <CollectionSlider />
+          <NewCollectionSlider />
+          <ComingSoonSlider />
+          <CategorySlider />
+        </div>
+
+        <FooterContainer />
       </IonContent>
     </IonPage>
   );

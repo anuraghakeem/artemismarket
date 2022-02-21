@@ -1,0 +1,37 @@
+.container-footer{
+    background-color: #f7b551;
+    color: #fff;
+}
+
+.footer-image{
+    width: 200px;
+}
+
+.container-footer .button-primary{
+    background-color: #fff;
+    color: #f7b551;
+    width: 200px;
+}
+
+.container-footer .vertical-list{
+    flex-direction: column;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container-footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-footer a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.container-footer .social-link{
+    --background: transparent;
+    --box-shadow: 0;
+}
